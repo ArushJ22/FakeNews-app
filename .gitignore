@@ -67,7 +67,7 @@ htmlcov/
 
 # Allow essential model files inside best_model_bert/
 !best_model_bert/config.json
-!best_model_bert/pytorch_model.bin
+!best_model_bert/model.safetensors
 !best_model_bert/tokenizer_config.json
 !best_model_bert/vocab.txt
 !best_model_bert/special_tokens_map.json

@@ -15,8 +15,14 @@ from transformers import BertTokenizer, BertForSequenceClassification
 import torch
 
 # Load saved BERT model and tokenizer (binary classification)
-model_bert = BertForSequenceClassification.from_pretrained("best_model_bert")
-tokenizer_bert = BertTokenizer.from_pretrained("best_model_bert")
+from transformers import AutoTokenizer, AutoConfig, BertForSequenceClassification
+
+config = AutoConfig.from_pretrained("best_model_bert")
+model_bert = BertForSequenceClassification.from_pretrained(
+    "best_model_bert",
+    config=config
+)
+tokenizer_bert = AutoTokenizer.from_pretrained("best_model_bert")
 model_bert.eval()
 
 # Load saved SVM model (TF-IDF + classifier pipeline)
