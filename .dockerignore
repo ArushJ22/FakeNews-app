@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pkl
+*.pt
+*.joblib
+*.db
+*.csv
+*.tsv
+logs/
+results/
+bert_isot_model/
+bert_isot_results/
+.git/
+.ipynb_checkpoints/
+*.ipynb

@@ -1,0 +1,73 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.so
+
+# Environment
+.env
+.venv/
+env/
+venv/
+*.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Dataset and output artifacts
+*.csv
+*.tsv
+*.json
+*.pkl
+*.pt
+*.joblib
+*.db
+*.log
+*.sqlite
+*.sqlite3
+*.h5
+*.ckpt
+logs/
+results/
+
+# Model folders (keep only essential BERT files manually)
+bert_isot_model/
+bert_isot_results/
+best_model_bert/  # IGNORE this if you're uploading select required files manually
+
+# Frontend build files (if any)
+dist/
+build/
+*.map
+
+# IDE & Editor configs
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+*.tar
+*.vhdx
+
+# Git
+*.orig
+
+# Python test cache
+.pytest_cache/
+coverage.xml
+htmlcov/
+.cache/
+
+# Deployment
+*.pem
+*.key
+
+# Allow essential model files inside best_model_bert/
+!best_model_bert/config.json
+!best_model_bert/pytorch_model.bin
+!best_model_bert/tokenizer_config.json
+!best_model_bert/vocab.txt
+!best_model_bert/special_tokens_map.json

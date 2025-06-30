@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fake News Detection</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <i class="fas fa-shield-alt"></i>
+      <h2>Fake News Guard</h2>
+    </div>
+    <div class="sidebar-menu">
+      <a href="#" class="active"><i class="fas fa-chart-line"></i><span>Dashboard</span></a>
+      <a href="#"><i class="fas fa-history"></i><span>History</span></a>
+      <a href="#"><i class="fas fa-users"></i><span>Manage Users</span></a>
+      <a href="#"><i class="fas fa-comment-alt"></i><span>Feedback</span></a>
+      <a href="#"><i class="fas fa-cog"></i><span>Settings</span></a>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="header">
+      <h1>Fake News Detection</h1>
+      <div class="user-info">
+        <div class="user-avatar">A</div>
+        <span>Admin</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-newspaper"></i> Enter News Article</h3>
+      <textarea placeholder="Paste your news article here to analyze its authenticity..."></textarea>
+      <button><i class="fas fa-search"></i> Analyze Content</button>
+    </div>
+
+    <div class="card result-section">
+      <h3><i class="fas fa-chart-pie"></i> Prediction Result</h3>
+      <div class="result-content">
+        <div class="result-stats">
+          <div class="result-item"><span>Status:</span><span class="result-value"></span></div>
+          <div class="result-item"><span>Article ID:</span><span class="result-value"></span></div>
+        </div>
+
+        <div class="chart-container">
+          <div class="pie-chart"></div>
+          <div class="chart-label">0%</div>
+          <div class="chart-legend">
+            <div class="legend-item"><div class="legend-color legend-fake"></div><span>Fake</span></div>
+            <div class="legend-item"><div class="legend-color legend-real"></div><span>Real</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/static/js/script.js"></script>
+</body>
+</html>
